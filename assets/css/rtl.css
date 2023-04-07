@@ -1,0 +1,296 @@
+/*-------------------------------------
+#. General
+---------------------------------------*/
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+.site-header .main-navigation ul li ul.sub-menu li.menu-item-has-children::after {
+	content: "\f104";
+}
+
+.site-header .main-navigation ul li.mega-menu>ul.sub-menu li::after {
+	content: '';
+}
+
+.additional-menu-area .sidenav ul li a::before {
+	font-family: 'FontAwesome';
+	content: "\f104";
+}
+
+.additional-menu-area .sidenav ul li a::after {
+	content: none;
+}
+
+.mean-container a.meanmenu-reveal {
+	left: 0 !important;
+	right: auto !important;
+}
+
+.entry-header .entry-meta ul li {
+	vertical-align: top;
+	line-height: 1.3;
+}
+
+.entry-header .entry-meta ul li i {
+	text-align: right;
+}
+
+.entry-header .entry-meta ul li .rtin-sep {
+	padding: 0 5px;
+	color: #b1b1b1;
+}
+
+.entry-header .entry-meta ul li a,
+.entry-header .entry-meta ul li i,
+.entry-header .entry-meta ul li span {
+	float: right;
+	line-height: 1.3;
+}
+
+.entry-footer .tags a,
+.entry-footer .tags span {
+	float: right;
+}
+
+.entry-footer .tags .rtin-sep {
+	color: #707070;
+	padding: 0 5px;
+}
+
+.pagination-area .fa-angle-double-right::before {
+	content: "\f100";
+}
+
+.pagination-area .fa-angle-double-left::before {
+	content: "\f101";
+}
+
+.event-single .event-info ul li span {
+	float: right;
+}
+
+/* Contact */
+.vc_sep_pos_align_left {
+	margin-left: auto;
+	margin-right: 0;
+}
+
+.contact-us-form {
+	text-align: right;
+}
+
+.contact-us-form .form-group .form-control {
+	text-align: right;
+}
+
+.contact-us-form .wpcf7-submit {
+	float: right;
+}
+
+div.wpcf7-response-output {
+	text-align: right;
+}
+
+/*-------------------------------------
+#. WooCommerce
+---------------------------------------*/
+.woocommerce div.product .product-meta .sku-label,
+.woocommerce div.product .product-meta span,
+.woocommerce div.product .product-meta a {
+	float: right;
+}
+
+.woocommerce div.product .product-meta .rtin-sep {
+	padding: 0 5px;
+	color: #666666;
+}
+
+.woocommerce div.product .product-meta .rtin-label {
+	margin-left: 5px;
+}
+
+/*-------------------------------------
+#. VC
+---------------------------------------*/
+.owl-wrap .fa-angle-left:before {
+	content: "\f105";
+}
+
+.owl-wrap .fa-angle-right:before {
+	content: "\f104";
+}
+
+.rt-vc-video .fa-play {
+	content: "\f04a";
+}
+
+.rt-vc-research-3 .rtin-item .rtin-holder .rtin-title a i:before {
+	content: "\f104";
+}
+
+/*-------------------------------------
+#. LearnPress: Course
+---------------------------------------*/
+.single-lp_course .content-area .site-main>.lp_course ul.learn-press-nav-tabs li {
+	float: right;
+}
+
+ul.course-features li {
+	padding-right: 18px;
+}
+
+ul.course-features li::before {
+	content: "\f053";
+	font-size: 12px;
+	top: 6px;
+}
+
+.course-features li span,
+.course-terms .course-term span,
+.course-terms .course-term a {
+	float: right;
+}
+
+.course-terms .course-term .rtin-sep {
+	padding: 0 5px;
+}
+
+#course-reviews .course-reviews-list li .review-author {
+	float: right;
+	margin-right: 0;
+}
+
+.review-form .review-fields>li,
+.review-form h3 {
+	text-align: right;
+}
+
+.review-form ul.review-fields .review-stars>li {
+	float: right;
+}
+
+.review-form h3 .close {
+	float: left;
+}
+
+.review-stars-rated .review-stars.filled {
+	right: 0;
+	left: inherit;
+}
+
+body.course-item-popup #learn-press-content-item {
+	right: 0;
+	left: 350px;
+}
+
+.scrollbar-light>.scroll-element.scroll-y {
+	right: inherit;
+	left: 2px;
+}
+
+/*-------------------------------------
+#. LearnPress: Profile
+---------------------------------------*/
+#learn-press-profile-nav {
+	float: right;
+}
+
+#learn-press-profile-content {
+	float: left;
+}
+
+#learn-press-user-profile #learn-press-profile-nav .learn-press-tabs li a::before {
+	content: none;
+}
+
+#learn-press-user-profile #learn-press-profile-nav .learn-press-tabs li a::after {
+	content: '\f104';
+	font-family: FontAwesome;
+	padding-left: 10px;
+	vertical-align: unset;
+	font-size: 15px;
+	line-height: 17px;
+	font-weight: 600;
+}
+
+#learn-press-profile-nav .tabs>li:hover:not(.active) ul {
+	right: 100%;
+	left: inherit;
+}
+
+.lp-tab-sections .section-tab {
+	float: right;
+}
+
+.lp-avatar-preview {
+	float: right;
+}
+
+.lp-list-table th,
+.lp-list-table td {
+	text-align: right;
+}
+
+/*-------------------------------------
+#. Plugin: Theme My Login
+---------------------------------------*/
+.tml label {
+	text-align: right;
+}
+
+.tml input,
+.tml textarea,
+.tml select {
+	margin: 0.5em 0;
+}
+
+.tml .tml-action-links {
+	margin: 0.5em auto;
+}
+
+.tml .tml-action-links li {
+	border-left: 1px solid rgba(0, 0, 0, 0.1);
+	float: right;
+	margin: 0 0 0 0.5em;
+	padding: 0 0 0 0.5em;
+}
+
+.tml .tml-action-links li:last-child {
+	border-left: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.tml .tml-action-links a {
+	padding: 0;
+}
+
+.tml .tml-user-avatar {
+	text-align: right;
+}
+
+#pass-strength-result {
+	margin: -1px 0 1.5em;
+	padding: 3px 5px;
+}
+
+.tml .wp-hide-pw {
+	margin: 0;
+	padding: 0 0.5em;
+}
+
+@media screen and (min-width: 768px) {
+	.tml-login .tml-rememberme-wrap input {
+		margin: 0;
+	}
+
+	.tml-login .tml-submit-wrap {
+		text-align: left;
+	}
+}
+
+#popup-course #popup-header {
+	left: 0;
+}

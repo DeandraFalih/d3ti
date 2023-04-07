@@ -1,0 +1,117 @@
+.vc_license-activation-notice {
+    display: none;
+}
+
+.vc_edit_form_elements .textarea_raw_html {
+    height: 60px;
+}
+
+.redux-dev-mode-notice-container {
+    display: none;
+}
+
+.redux-container-image_select .redux-image-select {
+    margin: 0 0 10px !important;
+}
+
+#learn-press-newsletter-button {
+    display: none;
+}
+
+[data-notice="new_extension-2fa"] {
+    display: none;
+}
+
+.appearance_page_pt-one-click-demo-import .ui-dialog-buttonset .button-primary {
+    background: #008ec2;
+    border-color: #006799;
+    color: #fff;
+}
+
+.appearance_page_pt-one-click-demo-import .ui-widget-header .ui-dialog-titlebar-close::before {
+    content: none;
+}
+
+[dir='rtl'] .vc_shortcode-param[data-param_type="dropdown"] select.wpb_vc_param_value {
+    text-align: right;
+}
+
+[dir='rtl'] .vc_controls > div {
+    left: 0;
+}
+
+/*Redux Framwork*/
+.redux-container-image_select .redux-image-select-selected {
+    background: none;
+}
+
+.redux-container-image_select ul.redux-image-select li {
+    font-size: 13px;
+    text-align: center;
+    margin-right: 5px !important;
+}
+
+.redux-container-image_select .redux-image-select img, .redux-container-image_select .redux-image-select .tiles {
+    border-color: #b1b1b1;
+}
+
+.redux-container .ui-button {
+    padding: 8px 14px 6px;
+}
+
+.redux-main .button.remove-image:hover {
+    color: #f00;
+}
+
+@media (min-width: 768px) {
+    .redux-container .redux-action_bar .button {
+        margin-left: 5px;
+    }
+    .eikra-footer_style
+}
+
+
+#fw-ext-backups-demo-list .main .tab-menu-link.active {
+    color: #fff;
+    background: #00466a;
+}
+#fw-ext-backups-demo-list .main .tab-bar {
+    padding: 24px;
+}
+#fw-ext-backups-demo-list .tab-bar .texts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+}
+#fw-ext-backups-demo-list.theme-browser .theme {
+    width: 100%;
+}
+
+.main #second .texts .theme-actions .button {
+    background-color: #8d0039;
+    border-color: #8d0039;
+}
+.main #second .texts .theme-actions .button:hover {
+    background-color: #b7024b;
+    border-color: #b7024b;
+}
+.main #second .texts .theme-name {
+    color: #b7024b;
+}
+
+@media (max-width: 1200px) {
+    #fw-ext-backups-demo-list .tab-bar .texts {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (max-width: 767px) {
+    #fw-ext-backups-demo-list .tab-bar .texts {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 575px) {
+    #fw-ext-backups-demo-list .tab-bar .texts {
+        grid-template-columns: 1fr;
+    }
+}
