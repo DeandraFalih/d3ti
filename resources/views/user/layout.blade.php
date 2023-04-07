@@ -1,200 +1,303 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>News HTML-5 Template </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="manifest" href="site.webmanifest">
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 
-<head>
-    <meta charset="utf-8">
-    <title>D3 Teknik Informatika</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+		<!-- CSS here -->
+        <link rel="stylesheet" href="{{ url ('user/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ url ('user/css/owl.carousel.min.css') }}">
+        <link rel="stylesheet" href="{{ url ('user/css/ticker-style.css') }}">
+        <link rel="stylesheet" href="{{ url ('user/css/flaticon.css') }}">
+        <link rel="stylesheet" href="{{ url ('user/css/slicknav.css') }}">
+        <link rel="stylesheet" href="{{ url ('user/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ url ('user/css/magnific-popup.css') }}">
+        <link rel="stylesheet" href="{{ url ('user/css/fontawesome-all.min.css') }}">
+        <link rel="stylesheet" href="{{ url ('user/css/themify-icon.css') }}">
+        <link rel="stylesheet" href="{{ url ('user/css/slick.css') }}">
+        <link rel="stylesheet" href="{{ url ('user/css/nice-select.css') }}">
+        <link rel="stylesheet" href="{{ url ('user/css/style.css') }}">
+   </head>
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"> 
-
-    <!-- Icon Font Stylesheet -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" >
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
-
-    <!-- Libraries Stylesheet -->
-    <link rel="stylesheet" href="{{ url ('user/lib/animate/animate.min.css') }}"/>
-    <link rel="stylesheet" href="{{ url ('user/lib/owlcarousel/assets/owl.carousel.min.css') }}"/>
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link rel="stylesheet" href="{{ url ('user/css/bootstrap.min.css') }}"/>
-
-    <!-- Template Stylesheet -->
-    <link rel="stylesheet" href="{{ url ('user/css/style.css') }}"/>
-</head>
-
-<body>
-    <!-- Back to Top -->
-
-    
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
-        <a href="{{ url ('/') }}" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-1000"><img src="{{ url ('user/img/logo-default.png') }}" height="45" alt="Image"> </h2>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <!-- home -->
-                <a href="{{ url ('/') }}" class="nav-link dropdown-toggle active">Beranda</a>
-                <!-- about -->
-                <div class="nav-item dropdown">
-                <a href="courses.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Profil</a>
-                    <div class="dropdown-menu bg-light m-0">
-                        <a href="{{ url('/tentang') }}" class="dropdown-item">Tentang</a>
-                        <a href="{{ url('/dosen') }}" class="dropdown-item">Dosen dan Staff</a>
-                        
-                    </div>
+   <body>
+       
+    <!-- Preloader Start -->
+    <!-- <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="{{ url ('user/img/logo/logo.jpg') }}" alt="">
                 </div>
-<!-- akademik -->
-                <div class="nav-item dropdown">
-                <a href="courses.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Akademik</a>
-                    <div class="dropdown-menu bg-light m-0">
-                        <a href="{{ url('/kalender-akademik') }}" class="dropdown-item">Kalender Akademik</a>
-                        <a href="{{ url('/kurikulum') }}" class="dropdown-item">Kurikulum</a>
-                        <a href="{{ url('/tugas-akhir') }}" class="dropdown-item">Tugas Akhir</a>
-                        <a href="{{ url('/fasilitas') }}" class="dropdown-item">Fasilitas</a>
-                        <a href="{{ url('/pusat-layanan-terpadu') }}" class="dropdown-item">Pusat Layanan Terpadu</a>
-                    </div>
-                </div>
-<!-- alumni -->
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Alumni</a>
-                    <div class="dropdown-menu bg-light m-0">
-                        <a href="{{ url('/forum-alumni') }}" class="dropdown-item">Forum Alumni</a>
-                        <a href="{{ url('/tracer-alumni') }}" class="dropdown-item">Tracer Alummni</a>
-                        
-                    </div>
-                </div>
-<!-- Mahasiswa -->
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Mahasiswa</a>
-                    <div class="dropdown-menu bg-light m-0">
-                        <a href="{{ url('/prestasi-mahasiswa') }}" class="dropdown-item">Prestasi Mahasiswa</a>
-                        <a href="{{ url('/emailkomp') }}" class="dropdown-item">Emailkomp</a>
-                        
-                    </div>
-                </div>
-<!-- Calon Mahasiswa -->
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Calon Mahasiswa</a>
-                    <div class="dropdown-menu bg-light m-0">
-                        <a href="https://spmb.uns.ac.id/" class="dropdown-item">Pendaftaran</a>
-                        <a href="#" class="dropdown-item">Prospek Karir</a>
-                        
-                    </div>
-                </div>
-<!-- Penelitian -->
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Penelitian</a>
-                    <div class="dropdown-menu bg-light m-0">
-                        <a href="{{ url('/penelitian-mahasiswa') }}" class="dropdown-item">Penelitian Mahasiswa</a>
-                        <a href="{{ url('/penelitian-dosen') }}" class="dropdown-item">Penelitian Dosen</a>
-                        <a href="{{ url('/penelitian-jurnal') }}" class="dropdown-item">Jurnal Dosen dan<br/>Mahasiswa</a>
-                        <a href="{{ url('/penelitian-kerjasama') }}" class="dropdown-item">Pengabdian</a>
-                        <a href="{{ url('/penelitian-pengabdian') }}" class="dropdown-item">Kerjasama</a>
-                    </div>
-                </div>
-<!-- Kontak -->
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Kontak</a>
-                </div>
-
-                
             </div>
-            
         </div>
-    </nav>
-    <!-- Navbar End -->
+    </div> -->
+    <!-- Preloader Start -->
+
+    <header>
+        <!-- Header Start -->
+       <div class="header-area">
+            <div class="main-header ">
+                <div class="header-top black-bg d-none d-md-block">
+                   <div class="container">
+                       <div class="col-xl-12">
+                            <div class="row d-flex justify-content-between align-items-center">
+                                <div class="header-info-left">
+                                    <ul>     
+                                        <li><img src="{{ url ('user/img/icon/header_icon1.jpg') }}" alt="">34ºc, Sunny </li>
+                                        <li><img src="{{ url ('user/img/icon/header_icon1.jpg') }}" alt="">Tuesday, 18th June, 2019</li>
+                                    </ul>
+                                </div>
+                                <div class="header-info-right">
+                                    <ul class="header-social">    
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                       <li> <a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                       </div>
+                   </div>
+                </div>
+                <div class="header-mid d-none d-md-block">
+                   <div class="container">
+                        <div class="row d-flex align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <div class="logo">
+                                    <a href="index.html"><img src="{{ url ('user/img/logo/logo.png') }}" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-9 col-lg-9 col-md-9">
+                                <div class="header-banner f-right ">
+                                    <img src="{{ url ('user/img/hero/header_card.jpg') }}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+               <div class="header-bottom header-sticky">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-xl-10 col-lg-10 col-md-12 header-flex">
+                                <!-- sticky -->
+                                    <div class="sticky-logo">
+                                        <a href="index.html"><img src="{{ url ('user/img/logo/logo.jpg') }}" alt=""></a>
+                                    </div>
+                                <!-- Main-menu -->
+                                <div class="main-menu d-none d-md-block">
+                                    <nav>                  
+                                        <ul id="navigation">    
+                                            <li><a href="{{ url ('/') }}">Beranda</a></li>
+                                            <li><a href="#">Profil</a>
+                                                <ul class="submenu">
+                                                    <li><a href="{{ url('/tentang') }}">Tentang</a></li>
+                                                    <li><a href="{{ url('/dosen') }}">Dosen & Staff</a></li> 
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Akademik</a>
+                                                <ul class="submenu">
+                                                    <li><a href="{{ url('/kalender-akademik') }}">Kalender Akademik</a></li>
+                                                    <li><a href="{{ url('/kurikulum') }}">Kurikulum</a></li>
+                                                    <li><a href="{{ url('/tugas-akhir') }}">Tugas Akhir</a></li>
+                                                    <li><a href="{{ url('/fasilitas') }}">Fasilitas</a></li>
+                                                    <li><a href="{{ url('/pusat-layanan-terpadu') }}">Pusat Layanan Terpadu</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Mahasiswa</a>
+                                                <ul class="submenu">
+                                                    <li><a href="{{ url('/prestasi-mahasiswa') }}">Prestasi Mahasiswa</a></li>
+                                                    <li><a href="{{ url('/emailkomp') }}">Emailkomp</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Calon Mahasiswa</a>
+                                                <ul class="submenu">
+                                                    <li><a href="https://spmb.uns.ac.id/">Pendaftaran</a></li>
+                                                    <li><a href="blog.html">Prospek Karir</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Penelitian</a>
+                                                <ul class="submenu">
+                                                    <li><a href="{{ url('/penelitian-mahasiswa') }}">Penelitian Mahasiswa</a></li>
+                                                    <li><a href="{{ url('/penelitian-dosen') }}">Penelitian Dosen</a></li>
+                                                    <li><a href="{{ url('/penelitian-jurnal') }}">Jurnal Dosen dan<br/>Mahasiswa</a></a></li>
+                                                    <li><a href="{{ url('/penelitian-kerjasama') }}">Pengabdian</a></li>
+                                                    <li><a href="{{ url('/penelitian-pengabdian') }}">Kerjasama</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                            
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>             
+                            <div class="col-xl-2 col-lg-2 col-md-4">
+                                <div class="header-right-btn f-right d-none d-lg-block">
+                                    <i class="fas fa-search special-tag"></i>
+                                    <div class="search-box">
+                                        <form action="#">
+                                            <input type="text" placeholder="Search">
+                                            
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Mobile Menu -->
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-md-none"></div>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+       </div>
+        <!-- Header End -->
+    </header>
 
     @yield('content')
-
     
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer my-6 mb-0 py-6 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Contact</h4>
-                    <!-- <h2 class="text-primary mb-4"><i class="fa fa-car text-white me-2"></i>Drivin</h2> -->
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Jl. Jend. Urip Sumoharjo No.112, Purwodiningratan, Kec. Jebres, Kota Surakarta, Jawa Tengah 57129</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Popular Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Newsletter</h4>
-                    <form action="">
-                        <div class="input-group">
-                            <input type="text" class="form-control p-3 border-0" placeholder="Your Email Address">
-                            <button class="btn btn-primary">Sign Up</button>
+   <footer>
+       <!-- Footer Start-->
+       <div class="footer-area footer-padding fix">
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-xl-5 col-lg-5 col-md-7 col-sm-12">
+                        <div class="single-footer-caption">
+                            <div class="single-footer-caption">
+                                <!-- logo -->
+                                <div class="footer-logo">
+                                    <a href="index.html"><img src="{{ url ('user/img/logo/logo2_footer.jpg') }}" alt=""></a>
+                                </div>
+                                <div class="footer-tittle">
+                                    <div class="footer-pera">
+                                        <p>Suscipit mauris pede for con sectetuer sodales adipisci for cursus fames lectus tempor da blandit gravida sodales  Suscipit mauris pede for con sectetuer sodales adipisci for cursus fames lectus tempor da blandit gravida sodales  Suscipit mauris pede for sectetuer.</p>
+                                    </div>
+                                </div>
+                                <!-- social -->
+                                <div class="footer-social">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                </div>
+                            </div>
                         </div>
-                    </form>
-                    <h6 class="text-white mt-4 mb-3">Follow Us</h6>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-warning me-1" href="https://www.facebook.com/d3tiuns/"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-warning me-1" href="https://www.youtube.com/@teknikinformatikauns"><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-outline-warning me-0" href="https://www.instagram.com/d3tiuns/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4  col-sm-6">
+                        <div class="single-footer-caption mt-60">
+                            <div class="footer-tittle">
+                                <h4>Newsletter</h4>
+                                <p>Heaven fruitful doesn't over les idays appear creeping</p>
+                                <!-- Form -->
+                                <div class="footer-form" >
+                                    <div id="mc_embed_signup">
+                                        <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                                        method="get" class="subscribe_form relative mail_part">
+                                            <input type="email" name="email" id="newsletter-form-email" placeholder="Email Address"
+                                            class="placeholder hide-on-focus" onfocus="this.placeholder = ''"
+                                            onblur="this.placeholder = ' Email Address '">
+                                            <div class="form-icon">
+                                            <button type="submit" name="submit" id="newsletter-submit"
+                                            class="email_icon newsletter-submit button-contactForm"><img src="{{ url ('user/img/logo/form-iocn.jpg') }}" alt=""></button>
+                                            </div>
+                                            <div class="mt-10 info"></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6">
+                        <div class="single-footer-caption mb-50 mt-60">
+                            <div class="footer-tittle">
+                                <h4>Instagram Feed</h4>
+                            </div>
+                            <div class="instagram-gellay">
+                                <ul class="insta-feed">
+                                    <li><a href="#"><img src="{{ url ('user/img/post/instra1.jpg') }}" alt=""></a></li>
+                                    <li><a href="#"><img src="{{ url ('user/img/post/instra2.jpg') }}" alt=""></a></li>
+                                    <li><a href="#"><img src="{{ url ('user/img/post/instra3.jpg') }}" alt=""></a></li>
+                                    <li><a href="#"><img src="{{ url ('user/img/post/instra4.jpg') }}" alt=""></a></li>
+                                    <li><a href="#"><img src="{{ url ('user/img/post/instra5.jpg') }}" alt=""></a></li>
+                                    <li><a href="#"><img src="{{ url ('user/img/post/instra6.jpg') }}" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Footer End -->
+       <!-- footer-bottom aera -->
+       <div class="footer-bottom-area">
+           <div class="container">
+               <div class="footer-border">
+                    <div class="row d-flex align-items-center justify-content-between">
+                        <div class="col-lg-6">
+                            <div class="footer-copy-right">
+                                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="footer-menu f-right">
+                                <ul>                             
+                                    <li><a href="#">Terms of use</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+           </div>
+       </div>
+       <!-- Footer End-->
+   </footer>
+   
+	<!-- JS here -->
+	
+    <script src="{{ url ('user/js/vendor/modernizr-3.5.0.min.js') }}"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="{{ url ('user/js/vendor/jquery-1.12.4.min.js') }}"></script>
+    <script src="{{ url ('user/js/popper.min.js') }}"></script>
+    <script src="{{ url ('user/js/bootstrap.min.js') }}"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="{{ url ('user/js/jquery.slicknav.min.js') }}"></script>
 
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="{{ url ('user/js/owl.carousel.min.js') }}"></script>
+    <script src="{{ url ('user/js/slick.min.js') }}"></script>
+    <!-- Date Picker -->
+    <script src="{{ url ('user/js/gijgo.min.js') }}"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="{{ url ('user/js/wow.min.js') }}"></script>
+    <script src="{{ url ('user/js/animated.headline.js') }}"></script>
+    <script src="{{ url ('user/js/jquery.magnific-popup.js') }}"></script>
 
-    <!-- Copyright Start -->
-    <div class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a href="#">Your Site Name</a>, All Right Reserved.
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a href="https://htmlcodex.com">HTML Codex</a>
-                    <br>Distributed By: <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- Breaking New Pluging -->
+    <script src="{{ url ('user/js/jquery.ticker.js') }}"></script>
+    <script src="{{ url ('user/js/site.js') }}"></script>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="{{ url ('user/lib/wow/wow.min.js') }}"></script>
-    <script src="{{ url ('user/lib/easing/easing.min.js') }}"></script>
-    <script src="{{ url ('user/lib/waypoints/waypoints.min.js') }}"></script>
-    <script src="{{ url ('user/lib/owlcarousel/owl.carousel.min.js') }}"></script>
+    <!-- Scrollup, nice-select, sticky -->
+    <script src="{{ url ('user/js/jquery.scrollUp.min.js') }}"></script>
+    <script src="{{ url ('user/js/jquery.nice-select.min.js') }}"></script>
+    <script src="{{ url ('user/js/jquery.sticky.js') }}"></script>
     
-
-    <!-- Template Javascript -->
+    <!-- contact js -->
+    <script src="{{ url ('user/js/contact.js') }}"></script>
+    <script src="{{ url ('user/js/jquery.form.js') }}"></script>
+    <script src="{{ url ('user/js/jquery.validate.min.js') }}"></script>
+    <script src="{{ url ('user/js/mail-script.js') }}"></script>
+    <script src="{{ url ('user/js/jquery.ajaxchimp.min.js') }}"></script>
+    
+    <!-- Jquery Plugins, main Jquery -->	
+    <script src="{{ url ('user/js/plugins.js') }}"></script>
     <script src="{{ url ('user/js/main.js') }}"></script>
-</body>
-
+        
+    </body>
 </html>
