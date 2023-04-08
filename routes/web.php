@@ -127,3 +127,8 @@ Route::GET('/penelitian-kerjasama', function () {
 Route::GET('/penelitian-pengabdian', function () {
     return view('user.penelitian.pengabdian');
 });
+
+//Kontak
+Route::GET('/penelitian-dosen-news', function () {
+    return view('user.news.dosennews');
+});

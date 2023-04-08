@@ -5,8 +5,8 @@
     <div class="row">
         <div class="container-fluid">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
+                <div class="row mt-40">
+                    <div class="col-lg-6 mb-80">
                         <div><br/>
                             <h1 class="mb-3 text-primary font-weight-bold">Visi program studi</h1>
                             <div>
@@ -54,10 +54,5 @@
             </div>
         </div>
     </div>
-
-    
-
-
-
 
 @endsection

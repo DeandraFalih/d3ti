@@ -3,7 +3,7 @@
 
 
 <div class="container-xxl py-6">
-    <div class="container">
+    <div class="container mt-80 mb-80">
         <div class="text-center mx-auto mb-5 wow fadeInUp">
             <h1 class="text-dark mb-4">Dosen Pengajar D3 Teknik Informatika</h1>
         </div>
