@@ -1,6 +1,11 @@
 @extends('user.layout')
 @section('content')
 
+<head>
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{{ url ('user/css/box.css') }}">
+</head>
+
 <main>
     <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -16,7 +21,7 @@
                                     <a href="" class="btn btn-light py-sm-3 px-sm-5 ms-3">Our Courses</a> --}}
                                 </div>
                                 
-                            </div><br><br><br><br><br>
+                            </div><br><br><br>
                             <div class="container-fluid facts py-5 pt-lg-0">
                                 <div class="container py-5 pt-lg-0">
                                     <div class="row gx-0">
