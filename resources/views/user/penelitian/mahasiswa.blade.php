@@ -7,66 +7,6 @@
         <div class="row">
             <div class="col-lg-8 mb-5 mb-lg-0">
                 <div class="blog_left_sidebar">
-                        <article class="blog_item">
-                            <div class="blog_details">
-                                <h3 class="mb-30">Contoh judul berita yang keren</h3>
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <img src="{{ url ('user/img/elements/d.jpg') }}" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="col-md-9 mt-sm-20">
-                                        
-                                        <p>Recently, the US Federal government banned online casinos from operating in America by making
-                                            it illegal to
-                                            transfer money to them through any US bank or payment system. As a result of this law, most
-                                            of the popular
-                                            online casino networks such as Party Gaming and PlayTech left the United States. Overnight,
-                                            online casino
-                                            </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </article> 
-                        <article class="blog_item">
-                            <div class="blog_details">
-                                <h3 class="mb-30">Contoh judul berita yang keren</h3>
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <img src="{{ url ('user/img/elements/d.jpg') }}" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="col-md-9 mt-sm-20">
-                                        
-                                        <p>Recently, the US Federal government banned online casinos from operating in America by making
-                                            it illegal to
-                                            transfer money to them through any US bank or payment system. As a result of this law, most
-                                            of the popular
-                                            online casino networks such as Party Gaming and PlayTech left the United States. Overnight,
-                                            online casino
-                                            </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </article> 
-                        <article class="blog_item">
-                            <div class="blog_details">
-                                <h3 class="mb-30">Contoh judul berita yang keren</h3>
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <img src="{{ url ('user/img/elements/d.jpg') }}" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="col-md-9 mt-sm-20">
-                                        
-                                        <p>Recently, the US Federal government banned online casinos from operating in America by making
-                                            it illegal to
-                                            transfer money to them through any US bank or payment system. As a result of this law, most
-                                            of the popular
-                                            online casino networks such as Party Gaming and PlayTech left the United States. Overnight,
-                                            online casino
-                                            </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </article> 
                         <article class="blog_item">     
                         <div class="blog_item_img">
                             <img class="card-img rounded-0" src="{{ url ('user/img/blog/single_blog_1.png') }}" alt="">

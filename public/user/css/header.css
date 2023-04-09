@@ -1,0 +1,27 @@
+:root {
+    --primary: #F3BD00;
+    --secondary: #757575;
+    --light: #F3F6F8;
+    --dark: #0C2B4B;
+    --black: #000000;
+}
+
+.header-line-height{
+    line-height: .1 !important;
+} 
+
+.submenu-line-height{
+    line-height: 1.5 !important;
+}
+
+.header-color{
+    background-color: var(--dark);
+}
+
+.text-worksans{
+    font-family: "Work Sans", sans-serif !important; 
+}
+
+.border-top {
+    border-top: 0px !important;
+}

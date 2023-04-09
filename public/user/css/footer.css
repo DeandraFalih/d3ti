@@ -1,0 +1,24 @@
+:root {
+    --primary: #F3BD00;
+    --secondary: #757575;
+    --light: #F3F6F8;
+    --dark: #0C2B4B;
+    --black: #000000;
+}
+
+.footer-color{
+    background-color: var(--dark);
+}
+
+.footer2-color{
+    background-color: #092139;
+}
+
+.custom-footer-padding {
+    padding-top: 1px !important;
+    padding-bottom: 50px
+}
+
+.footer-font{
+    color:#F3F6F8 !important; 
+}

@@ -11,18 +11,15 @@
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="{{ url ('user/img/vokasi.jpg') }}" height="600" style="object-fit: cover;" alt="sekolah vokasi">
+                    <img class="w-100 image-filter" src="{{ url ('user/img/vokasi.jpg') }}" height="600" style="object-fit: cover;" alt="sekolah vokasi" >
                     <div class="carousel-caption">
                         <div class="container">
-                            <div class="row justify-content-center">
+                            <div class="row justify-content-center mb-10">
                                 <div class="col-lg-9">
-                                    <h1 class="display-4 text-light mb-8 animated slideInDown">Selamat Datang di D3 Teknik Informatika UNS</h1>
-                                    {{-- <a href="" class="btn btn-primary py-sm-3 px-sm-5">Baca Lebih lanjut</a>
-                                    <a href="" class="btn btn-light py-sm-3 px-sm-5 ms-3">Our Courses</a> --}}
+                                    <h1 class="display-4 text-light mb-8 animated slideInDown font-weight-bold">Selamat Datang di D3 Teknik Informatika UNS</h1>
                                 </div>
-                                
-                            </div><br><br><br>
-                            <div class="container-fluid facts py-5 pt-lg-0">
+                            </div>
+                            <div class="container-fluid facts py-5 pt-lg-0 text-worksans ">
                                 <div class="container py-5 pt-lg-0">
                                     <div class="row gx-0">
                                         <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
@@ -31,8 +28,8 @@
                                                     <div class="flex-shrink-0 btn-lg-square bg-primary">
                                                         <i class="fa fa-car text-white"></i>
                                                     </div>
-                                                    <div class="ps-4">
-                                                        <h5> Kampus Mesen </h5>
+                                                    <div class="ps-4 text-white">
+                                                        <h5 class="text-white"> Kampus Mesen </h5>
                                                         <span>Clita erat ipsum lorem sit sed stet duo justo erat amet</span>
                                                     </div>
                                                 </div>
@@ -45,7 +42,7 @@
                                                         <i class="fa fa-users text-white"></i>
                                                     </div>
                                                     <div class="ps-4">
-                                                        <h5>Kampus Sekolah Vokasi</h5>
+                                                        <h5 class="text-white">Kampus Sekolah Vokasi</h5>
                                                         <span>Clita erat ipsum lorem sit sed stet duo justo erat amet</span>
                                                     </div>
                                                 </div>
@@ -58,7 +55,7 @@
                                                         <i class="fa fa-file-alt text-white"></i>
                                                     </div>
                                                     <div class="ps-4">
-                                                        <h5>Kampus Utama</h5>
+                                                        <h5 class="text-white">Kampus Utama</h5>
                                                         <span>Clita erat ipsum lorem sit sed stet duo justo erat amet</span>
                                                     </div>
                                                 </div>
@@ -84,7 +81,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section-tittle mb-30">
-                            <h3>Berita & Event D3 Teknik Informatika</h3>
+                            <h3>Berita Seputar D3 TI</h3>
                         </div>
                     </div>
                 </div>
