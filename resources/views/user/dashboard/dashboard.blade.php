@@ -4,6 +4,7 @@
 <head>
     <!-- CSS here -->
     <link rel="stylesheet" href="{{ url ('user/css/box.css') }}">
+    <link rel="stylesheet" href="{{ url ('user/css/mobile.css') }}">
 </head>
 
 <main>
@@ -13,10 +14,10 @@
                 <div class="carousel-item active">
                     <img class="w-100 image-filter" src="{{ url ('user/img/vokasi.jpg') }}" height="600" style="object-fit: cover;" alt="sekolah vokasi" >
                     <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-center mb-10">
+                        <div class="container ">
+                            <div class="row justify-content-center  mb-5">
                                 <div class="col-lg-9">
-                                    <h1 class="display-4 text-light mb-8 animated slideInDown font-weight-bold">Selamat Datang di D3 Teknik Informatika UNS</h1>
+                                    <h1 class="display-4 text-light mb-8 animated slideInDown font-weight-bold custom-tittle-size">Selamat Datang di D3 Teknik Informatika UNS</h1>
                                 </div>
                             </div>
                             <div class="container-fluid facts py-5 pt-lg-0 text-worksans ">
@@ -74,7 +75,7 @@
 
 
     <!--   Weekly2-News start -->
-    <div class="weekly2-news-area  weekly2-pading gray-bg">
+    <div class="weekly2-news-area weekly2-pading gray-bg">
         <div class="container">
             <div class="weekly2-wrapper">
                 <!-- section Tittle -->

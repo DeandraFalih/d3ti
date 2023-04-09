@@ -21,9 +21,9 @@
         <link rel="stylesheet" href="{{ url ('user/css/themify-icon.css') }}">
         <link rel="stylesheet" href="{{ url ('user/css/slick.css') }}">
         <link rel="stylesheet" href="{{ url ('user/css/nice-select.css') }}">
-        <link rel="stylesheet" href="{{ url ('user/css/header.css') }}">
         <link rel="stylesheet" href="{{ url ('user/css/style.css') }}">
         <link rel="stylesheet" href="{{ url ('user/css/footer.css') }}">
+        <link rel="stylesheet" href="{{ url ('user/css/mobile.css') }}">
    </head>
 
    <body>
@@ -47,21 +47,21 @@
                <div class="border-top header-sticky header-line-height header-color">
                     <div class="container">
                         <div class="row align-items-center">
-                            <div class="col-md-4 ">
+                            <div class="col-md-4 custom-navbar-size align-self-center">
                                 <a href="index.html"><img src="{{ url ('user/img/logo.png') }}" height="40" alt=""></a>
                             </div>
                             <div class="col-md-8">
                                 <div class="main-menu d-none d-md-block">
                                     <nav class="d-flex flex-row-reverse">            
                                         <ul id="navigation">    
-                                            <li><a class="text-white" href="{{ url ('/') }}">Beranda</a></li>
-                                            <li><a class="text-white" href="#">Profil</a>
+                                            <li class="li-mb"><a class="submenu-text-color" href="{{ url ('/') }}">Beranda</a></li>
+                                            <li class="li-mb"><a class="submenu-text-color " href="#">Profil</a>
                                                 <ul class="submenu submenu-line-height">
                                                     <li><a href="{{ url('/tentang') }}">Tentang</a></li>
                                                     <li><a href="{{ url('/dosen') }}">Dosen & Staff</a></li> 
                                                 </ul>
                                             </li>
-                                            <li><a class="text-white" href="#">Akademik</a>
+                                            <li class="li-mb"><a class="submenu-text-color" href="#">Akademik</a>
                                                 <ul class="submenu submenu-line-height">
                                                     <li><a href="{{ url('/kalender-akademik') }}">Kalender Akademik</a></li>
                                                     <li><a href="{{ url('/kurikulum') }}">Kurikulum</a></li>
@@ -70,19 +70,19 @@
                                                     <li><a href="{{ url('/pusat-layanan-terpadu') }}">Pusat Layanan Terpadu</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a class="text-white" href="#">Mahasiswa</a>
+                                            <li class="li-mb"><a class="submenu-text-color" href="#">Mahasiswa</a>
                                                 <ul class="submenu submenu-line-height">
                                                     <li><a href="{{ url('/prestasi-mahasiswa') }}">Prestasi Mahasiswa</a></li>
                                                     <li><a href="{{ url('/emailkomp') }}">Emailkomp</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a class="text-white" href="#">Calon Mahasiswa</a>
+                                            <li class="li-mb"><a class="submenu-text-color" href="#">Calon Mahasiswa</a>
                                                 <ul class="submenu submenu-line-height">
                                                     <li><a href="https://spmb.uns.ac.id/">Pendaftaran</a></li>
                                                     <li><a href="blog.html">Prospek Karir</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a class="text-white" href="#">Penelitian</a>
+                                            <li class="li-mb"><a class="submenu-text-color" href="#">Penelitian</a>
                                                 <ul class="submenu submenu-line-height">
                                                     <li><a href="{{ url('/penelitian-mahasiswa') }}">Penelitian Mahasiswa</a></li>
                                                     <li><a href="{{ url('/penelitian-dosen') }}">Penelitian Dosen</a></li>
@@ -91,7 +91,7 @@
                                                     <li><a href="{{ url('/penelitian-pengabdian') }}">Kerjasama</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a class="text-white" href="{{ url('/penelitian-dosen-news') }}">Contact</a></li>
+                                            <li class="li-mb"><a class="submenu-text-color" href="{{ url('/penelitian-dosen-news') }}">Contact</a></li>
                                             
                                         </ul>
                                     </nav>

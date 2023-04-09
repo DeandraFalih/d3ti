@@ -1,6 +1,11 @@
 @extends('user.layout')
 @section('content')
 
+<head>
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{{ url ('user/css/box.css') }}">
+</head>
+
 <section class="blog_area section-padding">
     <div class="container">
         <h1 class="mb-3 text-primary font-weight-bold">Pengabdian</h1>

@@ -1,6 +1,12 @@
 @extends('user.layout')
 @section('content')
 
+
+<head>
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{{ url ('user/css/box.css') }}">
+</head>
+
 <br>
     <div class="row">
         <div class="container-fluid">

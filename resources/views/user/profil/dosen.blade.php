@@ -1,6 +1,10 @@
 @extends('user.layout')
 @section('content')
 
+<head>
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{{ url ('user/css/box.css') }}">
+</head>
 
 <div class="container-xxl py-6">
     <div class="container mt-80 mb-80">
