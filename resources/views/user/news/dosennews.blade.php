@@ -1,6 +1,11 @@
 @extends('user.layout')
 @section('content')
 
+<head>
+   <!-- CSS here -->
+   <link rel="stylesheet" href="{{ url ('user/css/box.css') }}">
+</head>
+
 <section class="blog_area single-post-area section-padding">
       <div class="container">
          <div class="row">

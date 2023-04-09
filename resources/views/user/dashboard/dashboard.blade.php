@@ -162,41 +162,44 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <div class="recent-active dot-style d-flex dot-style">
-                            <div class="single-recent mb-100">
-                                <div class="what-img">
-                                    <img src="{{ url ('user/img/redhat.png') }}" alt="">
+                        <div class="weekly2-news-active dot-style d-flex dot-style">
+                            <div class="weekly2-single">
+                                <div class="weekly2-img">
+                                    <img src="{{ url ('user/img/news/weekly2News1.jpg') }}" alt="">
                                 </div>
-                        
-                            </div>
-                            <div class="single-recent mb-100">
-                                <div class="what-img">
-                                    <img src="{{ url ('user/img/news/recent2.jpg') }}" alt="">
+                            </div> 
+                            <div class="weekly2-single">
+                                <div class="weekly2-img">
+                                    <img src="{{ url ('user/img/news/weekly2News2.jpg') }}" alt="">
                                 </div>
-                                
-                            </div>
-                            <div class="single-recent mb-100">
-                                <div class="what-img">
-                                    <img src="{{ url ('user/img/news/recent3.jpg') }}" alt="">
+                            </div> 
+                            <div class="weekly2-single">
+                                <div class="weekly2-img">
+                                    <img src="{{ url ('user/img/news/weekly2News3.jpg') }}" alt="">
                                 </div>
-                                
                             </div>
-                            <div class="single-recent mb-100">
-                                <div class="what-img">
-                                    <img src="{{ url ('user/img/news/recent2.jpg') }}" alt="">
+                             <div class="weekly2-single">
+                                <div class="weekly2-img">
+                                    <img src="{{ url ('user/img/news/weekly2News4.jpg') }}" alt="">
                                 </div>
-                                
-                            </div>
+                            </div> 
+                             <div class="weekly2-single">
+                                <div class="weekly2-img">
+                                    <img src="{{ url ('user/img/news/weekly2News4.jpg') }}" alt="">
+                                </div>
+                            </div> 
                         </div>
                     </div>
                 </div>
            </div>
         </div>
-    </div>           
+    </div>
+    <br>
+    <br>           
     <!--Gallery -->
     <div class="container box_1170">
         <div class="section-top-border">
-            <h3>Image Gallery</h3>
+            <h3>Galeri D3 Teknik Informatika</h3>
             <div class="row gallery-item">
                 <div class="col-md-4">
                     <a href="assets/img/elements/g1.jpg" class="img-pop-up">

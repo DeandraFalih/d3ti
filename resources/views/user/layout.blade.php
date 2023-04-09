@@ -118,14 +118,20 @@
                 <div class="row d-flex justify-content-between ">
                     <div class="col-xl-5 col-lg-5 col-md-7 col-sm-12">
                         <div class="single-footer-caption">
+                            
                             <div class="single-footer-caption">
+                                
                                 <!-- logo -->
                                 <div class="footer-logo">
                                     <a href="index.html"><img src="{{ url ('user/img/logo/logo2_footer.jpg') }}" alt=""></a>
                                 </div>
                                 <div class="footer-tittle ">
                                     <div class="footer-pera ">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.1098677734217!2d110.83377821554613!3d-7.562998876789651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a17bfca3568f1%3A0x52872ee12cf2fa57!2sKampus%20UNS%20Mesen!5e0!3m2!1sen!2sid!4v1681055365020!5m2!1sen!2sid" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                         <p class="footer-font">Suscipit mauris pede for con sectetuer sodales adipisci for cursus fames lectus tempor da blandit gravida sodales  Suscipit mauris pede for con sectetuer sodales adipisci for cursus fames lectus tempor da blandit gravida sodales  Suscipit mauris pede for sectetuer.</p>
+                                        {{-- <p class="footer-font"><i class="fa fa-map-marker-alt me-3"></i>Jl. Jend. Urip Sumoharjo No.112, Purwodiningratan, Kec. Jebres, Kota Surakarta, Jawa Tengah 57129</p>
+                                        <p class="footer-font"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                                        <p class="footer-font"><i class="fa fa-envelope me-3"></i>info@example.com</p> --}}
                                     </div>
                                 </div>
                                 <!-- social -->
@@ -165,6 +171,7 @@
                         <div class="single-footer-caption mb-50 mt-60">
                             <div class="footer-tittle">
                                 <h4>Instagram Feed</h4>
+                                <p class="text-dark custom-easter-eggs">Copyright G.P.H. Inc License Don't delete!</p>
                             </div>
                             <div class="instagram-gellay">
                                 
@@ -224,11 +231,6 @@
     <!-- Breaking New Pluging -->
     <script src="{{ url ('user/js/jquery.ticker.js') }}"></script>
     <script src="{{ url ('user/js/site.js') }}"></script>
-
-    {{-- <!-- Scrollup, nice-select, sticky -->
-    <script src="{{ url ('user/js/jquery.scrollUp.min.js') }}"></script>
-    <script src="{{ url ('user/js/jquery.nice-select.min.js') }}"></script>
-    <script src="{{ url ('user/js/jquery.sticky.js') }}"></script> --}}
     
     <!-- contact js -->
     <script src="{{ url ('user/js/contact.js') }}"></script>
